@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, request
 import json
 import requests
 
-API_URL = ""
+
 
 
 app = Flask(__name__)
