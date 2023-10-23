@@ -1,10 +1,20 @@
-from flask import Flask
+from flask import Flask, redirect, url_for, request
+import json
+import requests
+
+
+
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
 
-if __name__ == '__main__':
-    app.run()
+#for posting the answers to the questions
+@app.route("/post", methods=["POST"])
+def post_request():
+
+    #Write post here
+
+#also add return values
+    return 
+
+
