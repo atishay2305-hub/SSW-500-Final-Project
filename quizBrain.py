@@ -1,31 +1,39 @@
+# quiz_server.py
+from flask import Flask, request, jsonify
+from flask_pymongo import PyMongo
 
-correct_answers_counter = 0
+app = Flask(__name__)
+app.config["MONGO_URI"] = "mongodb://localhost:27017/quiz_db"  # Change the URI accordingly
+mongo = PyMongo(app)
 
-with open("questionDump.py", 'r') as file:
-    content = file.read()
+from quiz_brain import QuizBrain
 
-def getCorrectAnswers():
-    try:
-        data_dict = eval(content)
-        print(data_dict)
-        if data_dict == "questions":
-            questions = data_dict
-            for question in questions:
-                print("Options: ")
-                for i in range(len(question["incorrect_answers"])):
-                    print(f"{i+1}. {question['incorrect_answers'][i]}")
-                print(f"{len(question['incorrect_answers'])+1}. {question['corrrect_answer']}")
-                user_answer = int(input("Enter the number of your answer: "))
-                if user_answer == len(question["incorrect_answers"]) + 1:
-                    print("Correct!")
-                    correct_answers_counter += 1
-                else:
-                    print("Incorrect.")    
-        response = (f"You got {correct_answers_counter} out of {len(questions)} questions correct.")
-        return response
+quiz_brain = QuizBrain()
 
-    except SyntaxError:
-        response = "Error: There was a syntax error in the file. Make sure it's a valid Python dictionary."
-        return response
+# Add some sample questions
+quiz_brain.add_question("What is the capital of France?", "Paris")
+quiz_brain.add_question("What is 2 + 2?", "4")
+# Add more questions as needed
 
-    
+@app.route('/quiz', methods=['GET', 'POST'])
+def quiz():
+    if request.method == 'GET':
+        question_data = quiz_brain.get_next_question()
+        if question_data:
+            return jsonify(question_data)
+        else:
+            return jsonify({"message": "Quiz completed!"})
+
+    elif request.method == 'POST':
+        data = request.json
+        user_data = {
+            "name": data["name"],
+            "marks": data["marks"],
+            "quiz_attempted": data["quiz_attempted"]
+        }
+        mongo.db.users.insert_one(user_data)
+        return jsonify({"message": "User data stored successfully!"})
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
