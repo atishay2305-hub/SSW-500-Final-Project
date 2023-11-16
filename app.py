@@ -1,20 +1,5 @@
-from flask import Flask, redirect, url_for, request
-import json
-import requests
+# app.py
+from quiz_server import app
 
-
-
-
-app = Flask(__name__)
-
-
-#for posting the answers to the questions
-@app.route("/post", methods=["POST"])
-def post_request():
-
-    #Write post here
-
-#also add return values
-    return 
-
-
+if __name__ == '__main__':
+    app.run(debug=True)
