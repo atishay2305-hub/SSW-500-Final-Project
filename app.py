@@ -3,21 +3,24 @@ from flask_pymongo import PyMongo
 from bson import ObjectId
 from views import views
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    
+    # Add your app configuration and routes here
 
+    return app
+
+app = create_app()
+
+# Configure MongoDB
 app.config['MONGO_URI'] = "mongodb://localhost:27017/SSW-500"
 mongo = PyMongo(app)
 
+# Register the 'views' blueprint
 app.register_blueprint(views, url_prefix="/")
 
+# Define the Question class
 class Question:
-    q_id = -1
-    question = ""
-    option1 = ""
-    option2 = ""
-    option3 = ""
-    correctOption = -1
-
     def __init__(self, q_id, question, option1, option2, option3, correctOption):
         self.q_id = q_id
         self.question = question
@@ -34,12 +37,15 @@ class Question:
         elif self.correctOption == 3:
             return self.option3
 
-q1 = Question(1, "What is your University Name", "Stevens", "NJIT", "ASU", 1)
+# Create instances of the Question class
+q1 = Question(1, "What is your University Name?", "Stevens", "NJIT", "ASU", 1)
 q2 = Question(2, "Where UET is located", "Hoboken", "Jersey City", "New York", 3)
 q3 = Question(3, "What is your degree name?", "SWE", "CS", "MIS", 2)
 
+# Create a list of questions
 questions_list = [q1, q2, q3]
 
+# Define routes
 @app.route("/quiz")
 def quiz():
     return render_template("quiz.html", questions_list=questions_list)
@@ -61,5 +67,6 @@ def submit():
 def catch_all(path):
     return render_template("error.html"), 404
 
+# Run the app
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
