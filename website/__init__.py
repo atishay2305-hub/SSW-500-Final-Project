@@ -9,4 +9,10 @@ def create_app():
     
     logging.info("Curently in init.py. App config done.")
     
+    from .views import views
+    from .auth import auth
+
+    app.register_blueprint(views, url_prefix='/')
+    app.register_blueprint(auth, url_prefix='/')
+
     return app

@@ -1,0 +1,38 @@
+11/08/2023 02:37:13 PM Curently in init.py. App config done.
+11/08/2023 02:37:38 PM Curently in init.py. App config done.
+11/08/2023 02:38:09 PM Curently in init.py. App config done.
+11/08/2023 02:39:22 PM Curently in init.py. App config done.
+11/08/2023 02:39:22 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11/08/2023 02:39:22 PM [33mPress CTRL+C to quit[0m
+11/08/2023 02:39:22 PM  * Restarting with stat
+11/08/2023 02:39:23 PM Curently in init.py. App config done.
+11/08/2023 02:39:23 PM  * Debugger is active!
+11/08/2023 02:39:23 PM  * Debugger PIN: 559-411-436
+11/08/2023 02:39:38 PM 127.0.0.1 - - [08/Nov/2023 14:39:38] "GET / HTTP/1.1" 200 -
+11/08/2023 03:09:03 PM  * Detected change in 'c:\\Users\\Rachana Rizhkant Zha\\Desktop\\Course Content\\Sem 3\\SSW500-A-Introduction to software development\\project\\SSW-500-Final-Project\\website\\auth.py', reloading
+11/08/2023 03:09:03 PM  * Restarting with stat
+11/08/2023 03:09:03 PM Curently in init.py. App config done.
+11/08/2023 03:09:22 PM Curently in init.py. App config done.
+11/08/2023 03:09:22 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11/08/2023 03:09:22 PM [33mPress CTRL+C to quit[0m
+11/08/2023 03:09:22 PM  * Restarting with stat
+11/08/2023 03:09:22 PM Curently in init.py. App config done.
+11/08/2023 03:09:22 PM  * Debugger is active!
+11/08/2023 03:09:22 PM  * Debugger PIN: 559-411-436
+11/08/2023 03:09:28 PM 127.0.0.1 - - [08/Nov/2023 15:09:28] "GET / HTTP/1.1" 200 -
+11/08/2023 03:09:32 PM 127.0.0.1 - - [08/Nov/2023 15:09:32] "GET / HTTP/1.1" 200 -
+11/08/2023 03:09:38 PM 127.0.0.1 - - [08/Nov/2023 15:09:38] "GET /login HTTP/1.1" 200 -
+11/08/2023 03:09:44 PM 127.0.0.1 - - [08/Nov/2023 15:09:44] "[33mGET /login/logout HTTP/1.1[0m" 404 -
+11/08/2023 03:09:49 PM 127.0.0.1 - - [08/Nov/2023 15:09:49] "GET /logout HTTP/1.1" 200 -
+11/08/2023 03:09:56 PM 127.0.0.1 - - [08/Nov/2023 15:09:56] "[33mGET /signup HTTP/1.1[0m" 404 -
+11/08/2023 03:10:03 PM 127.0.0.1 - - [08/Nov/2023 15:10:03] "GET /sign-up HTTP/1.1" 200 -
+11/09/2023 12:57:36 AM Curently in init.py. App config done.
+11/09/2023 12:57:36 AM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11/09/2023 12:57:36 AM [33mPress CTRL+C to quit[0m
+11/09/2023 12:57:36 AM  * Restarting with stat
+11/09/2023 12:57:36 AM Curently in init.py. App config done.
+11/09/2023 12:57:36 AM  * Debugger is active!
+11/09/2023 12:57:36 AM  * Debugger PIN: 559-411-436
