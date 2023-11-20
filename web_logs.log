@@ -36,3 +36,14 @@
 11/09/2023 12:57:36 AM Curently in init.py. App config done.
 11/09/2023 12:57:36 AM  * Debugger is active!
 11/09/2023 12:57:36 AM  * Debugger PIN: 559-411-436
+11/20/2023 12:04:14 AM Curently in init.py. App config done.
+11/20/2023 12:04:14 AM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11/20/2023 12:04:14 AM [33mPress CTRL+C to quit[0m
+11/20/2023 12:04:14 AM  * Restarting with stat
+11/20/2023 12:04:14 AM Curently in init.py. App config done.
+11/20/2023 12:04:14 AM  * Debugger is active!
+11/20/2023 12:04:14 AM  * Debugger PIN: 559-411-436
+11/20/2023 12:04:25 AM 127.0.0.1 - - [20/Nov/2023 00:04:25] "GET /login HTTP/1.1" 200 -
+11/20/2023 12:04:25 AM 127.0.0.1 - - [20/Nov/2023 00:04:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+11/20/2023 12:05:51 AM 127.0.0.1 - - [20/Nov/2023 00:05:51] "GET /sign-up HTTP/1.1" 200 -
