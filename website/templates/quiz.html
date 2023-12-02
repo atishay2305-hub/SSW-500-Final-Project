@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #007bff;
+    }
+    form {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+    h4 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Quiz Application</h1>
+
+  <form action="/submitquiz" method="post">
+    {% for question in questions_list %}
+      <h4>{{ question.question }}</h4>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.option1 }}"> {{ question.option1 }} <br>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.option2 }}"> {{ question.option2 }} <br>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.option3 }}"> {{ question.option3 }} <br><br>
+    {% endfor %}
+
+    <input type="submit" name="submitform" value="Submit">
+  </form>
+</body>
+</html>
+{% endblock %}
