@@ -6,6 +6,8 @@ from flask_login import LoginManager, login_user, login_required, logout_user, c
 import sys
 from pathlib import Path
 
+
+
 auth = Blueprint('auth', __name__)
 # Create instances of the Question class
 q1 = Question(1, "What is your University Name?", "Stevens", "NJIT", "ASU", 1)
