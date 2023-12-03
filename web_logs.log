@@ -1192,3 +1192,400 @@
 11/26/2023 06:23:44 AM Curently in init.py. App config done.
 11/26/2023 06:23:44 AM  * Debugger is active!
 11/26/2023 06:23:44 AM  * Debugger PIN: 559-411-436
+12/03/2023 03:02:50 PM Curently in init.py. App config done.
+12/03/2023 03:02:50 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/03/2023 03:02:50 PM [33mPress CTRL+C to quit[0m
+12/03/2023 03:02:50 PM  * Restarting with stat
+12/03/2023 03:02:51 PM Curently in init.py. App config done.
+12/03/2023 03:02:51 PM  * Debugger is active!
+12/03/2023 03:02:51 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:04:10 PM 127.0.0.1 - - [03/Dec/2023 15:04:10] "GET / HTTP/1.1" 200 -
+12/03/2023 03:04:10 PM 127.0.0.1 - - [03/Dec/2023 15:04:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+12/03/2023 03:04:12 PM 127.0.0.1 - - [03/Dec/2023 15:04:12] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+12/03/2023 03:04:12 PM 127.0.0.1 - - [03/Dec/2023 15:04:12] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+12/03/2023 03:04:12 PM 127.0.0.1 - - [03/Dec/2023 15:04:12] "GET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+12/03/2023 03:04:12 PM 127.0.0.1 - - [03/Dec/2023 15:04:12] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+12/03/2023 03:04:12 PM 127.0.0.1 - - [03/Dec/2023 15:04:12] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/03/2023 03:04:15 PM 127.0.0.1 - - [03/Dec/2023 15:04:15] "GET / HTTP/1.1" 200 -
+12/03/2023 03:04:17 PM 127.0.0.1 - - [03/Dec/2023 15:04:17] "GET /login HTTP/1.1" 200 -
+12/03/2023 03:04:19 PM 127.0.0.1 - - [03/Dec/2023 15:04:19] "GET /sign-up HTTP/1.1" 200 -
+12/03/2023 03:04:44 PM 127.0.0.1 - - [03/Dec/2023 15:04:44] "[35m[1mPOST /sign-up HTTP/1.1[0m" 500 -
+12/03/2023 03:04:44 PM 127.0.0.1 - - [03/Dec/2023 15:04:44] "GET /sign-up?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+12/03/2023 03:04:44 PM 127.0.0.1 - - [03/Dec/2023 15:04:44] "GET /sign-up?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+12/03/2023 03:04:44 PM 127.0.0.1 - - [03/Dec/2023 15:04:44] "GET /sign-up?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+12/03/2023 03:04:44 PM 127.0.0.1 - - [03/Dec/2023 15:04:44] "[36mGET /sign-up?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/03/2023 03:05:01 PM 127.0.0.1 - - [03/Dec/2023 15:05:01] "GET /quiz HTTP/1.1" 200 -
+12/03/2023 03:05:07 PM 127.0.0.1 - - [03/Dec/2023 15:05:07] "POST /submitquiz HTTP/1.1" 200 -
+12/03/2023 03:17:21 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:21 PM  * Restarting with stat
+12/03/2023 03:17:21 PM Curently in init.py. App config done.
+12/03/2023 03:17:21 PM  * Debugger is active!
+12/03/2023 03:17:21 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:26 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:27 PM  * Restarting with stat
+12/03/2023 03:17:27 PM Curently in init.py. App config done.
+12/03/2023 03:17:27 PM  * Debugger is active!
+12/03/2023 03:17:27 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:37 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:37 PM  * Restarting with stat
+12/03/2023 03:17:37 PM Curently in init.py. App config done.
+12/03/2023 03:17:37 PM  * Debugger is active!
+12/03/2023 03:17:37 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:41 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:41 PM  * Restarting with stat
+12/03/2023 03:17:42 PM Curently in init.py. App config done.
+12/03/2023 03:17:42 PM  * Debugger is active!
+12/03/2023 03:17:42 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:44 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:44 PM  * Restarting with stat
+12/03/2023 03:17:44 PM Curently in init.py. App config done.
+12/03/2023 03:17:44 PM  * Debugger is active!
+12/03/2023 03:17:44 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:48 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:48 PM  * Restarting with stat
+12/03/2023 03:17:48 PM Curently in init.py. App config done.
+12/03/2023 03:17:48 PM  * Debugger is active!
+12/03/2023 03:17:48 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:49 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:49 PM  * Restarting with stat
+12/03/2023 03:17:49 PM Curently in init.py. App config done.
+12/03/2023 03:17:50 PM  * Debugger is active!
+12/03/2023 03:17:50 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:52 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:52 PM  * Restarting with stat
+12/03/2023 03:17:52 PM Curently in init.py. App config done.
+12/03/2023 03:17:52 PM  * Debugger is active!
+12/03/2023 03:17:52 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:17:56 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:17:56 PM  * Restarting with stat
+12/03/2023 03:17:56 PM Curently in init.py. App config done.
+12/03/2023 03:17:56 PM  * Debugger is active!
+12/03/2023 03:17:56 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:18:01 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:18:01 PM  * Restarting with stat
+12/03/2023 03:18:01 PM Curently in init.py. App config done.
+12/03/2023 03:18:01 PM  * Debugger is active!
+12/03/2023 03:18:01 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:18:05 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:18:06 PM  * Restarting with stat
+12/03/2023 03:18:06 PM Curently in init.py. App config done.
+12/03/2023 03:18:06 PM  * Debugger is active!
+12/03/2023 03:18:06 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:18:07 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:18:07 PM  * Restarting with stat
+12/03/2023 03:18:07 PM Curently in init.py. App config done.
+12/03/2023 03:18:07 PM  * Debugger is active!
+12/03/2023 03:18:07 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:18:13 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:18:13 PM  * Restarting with stat
+12/03/2023 03:18:13 PM Curently in init.py. App config done.
+12/03/2023 03:18:13 PM  * Debugger is active!
+12/03/2023 03:18:13 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:18:15 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:18:15 PM  * Restarting with stat
+12/03/2023 03:18:15 PM Curently in init.py. App config done.
+12/03/2023 03:18:15 PM  * Debugger is active!
+12/03/2023 03:18:15 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:22 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:22 PM  * Restarting with stat
+12/03/2023 03:24:22 PM Curently in init.py. App config done.
+12/03/2023 03:24:22 PM  * Debugger is active!
+12/03/2023 03:24:22 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:27 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:28 PM  * Restarting with stat
+12/03/2023 03:24:28 PM Curently in init.py. App config done.
+12/03/2023 03:24:28 PM  * Debugger is active!
+12/03/2023 03:24:28 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:32 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:33 PM  * Restarting with stat
+12/03/2023 03:24:33 PM Curently in init.py. App config done.
+12/03/2023 03:24:33 PM  * Debugger is active!
+12/03/2023 03:24:33 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:35 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:35 PM  * Restarting with stat
+12/03/2023 03:24:35 PM Curently in init.py. App config done.
+12/03/2023 03:24:35 PM  * Debugger is active!
+12/03/2023 03:24:35 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:40 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:41 PM  * Restarting with stat
+12/03/2023 03:24:41 PM Curently in init.py. App config done.
+12/03/2023 03:24:41 PM  * Debugger is active!
+12/03/2023 03:24:41 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:44 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:45 PM  * Restarting with stat
+12/03/2023 03:24:45 PM Curently in init.py. App config done.
+12/03/2023 03:24:45 PM  * Debugger is active!
+12/03/2023 03:24:45 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:49 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:50 PM  * Restarting with stat
+12/03/2023 03:24:50 PM Curently in init.py. App config done.
+12/03/2023 03:24:50 PM  * Debugger is active!
+12/03/2023 03:24:50 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:24:56 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:24:56 PM  * Restarting with stat
+12/03/2023 03:24:56 PM Curently in init.py. App config done.
+12/03/2023 03:24:56 PM  * Debugger is active!
+12/03/2023 03:24:56 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:03 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:03 PM  * Restarting with stat
+12/03/2023 03:25:03 PM Curently in init.py. App config done.
+12/03/2023 03:25:03 PM  * Debugger is active!
+12/03/2023 03:25:03 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:05 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:05 PM  * Restarting with stat
+12/03/2023 03:25:05 PM Curently in init.py. App config done.
+12/03/2023 03:25:05 PM  * Debugger is active!
+12/03/2023 03:25:05 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:07 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:08 PM  * Restarting with stat
+12/03/2023 03:25:08 PM Curently in init.py. App config done.
+12/03/2023 03:25:08 PM  * Debugger is active!
+12/03/2023 03:25:08 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:10 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:10 PM  * Restarting with stat
+12/03/2023 03:25:10 PM Curently in init.py. App config done.
+12/03/2023 03:25:10 PM  * Debugger is active!
+12/03/2023 03:25:10 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:18 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:18 PM  * Restarting with stat
+12/03/2023 03:25:19 PM Curently in init.py. App config done.
+12/03/2023 03:25:19 PM  * Debugger is active!
+12/03/2023 03:25:19 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:21 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:21 PM  * Restarting with stat
+12/03/2023 03:25:21 PM Curently in init.py. App config done.
+12/03/2023 03:25:21 PM  * Debugger is active!
+12/03/2023 03:25:21 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:27 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:27 PM  * Restarting with stat
+12/03/2023 03:25:27 PM Curently in init.py. App config done.
+12/03/2023 03:25:27 PM  * Debugger is active!
+12/03/2023 03:25:27 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:35 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:36 PM  * Restarting with stat
+12/03/2023 03:25:36 PM Curently in init.py. App config done.
+12/03/2023 03:25:36 PM  * Debugger is active!
+12/03/2023 03:25:36 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:42 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:42 PM  * Restarting with stat
+12/03/2023 03:25:42 PM Curently in init.py. App config done.
+12/03/2023 03:25:42 PM  * Debugger is active!
+12/03/2023 03:25:42 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:49 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:49 PM  * Restarting with stat
+12/03/2023 03:25:49 PM Curently in init.py. App config done.
+12/03/2023 03:25:49 PM  * Debugger is active!
+12/03/2023 03:25:49 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:52 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:52 PM  * Restarting with stat
+12/03/2023 03:25:52 PM Curently in init.py. App config done.
+12/03/2023 03:25:52 PM  * Debugger is active!
+12/03/2023 03:25:52 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:25:55 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:25:55 PM  * Restarting with stat
+12/03/2023 03:25:55 PM Curently in init.py. App config done.
+12/03/2023 03:25:55 PM  * Debugger is active!
+12/03/2023 03:25:55 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:02 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:02 PM  * Restarting with stat
+12/03/2023 03:26:02 PM Curently in init.py. App config done.
+12/03/2023 03:26:02 PM  * Debugger is active!
+12/03/2023 03:26:02 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:03 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:03 PM  * Restarting with stat
+12/03/2023 03:26:04 PM Curently in init.py. App config done.
+12/03/2023 03:26:04 PM  * Debugger is active!
+12/03/2023 03:26:04 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:08 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:09 PM  * Restarting with stat
+12/03/2023 03:26:09 PM Curently in init.py. App config done.
+12/03/2023 03:26:09 PM  * Debugger is active!
+12/03/2023 03:26:09 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:11 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:11 PM  * Restarting with stat
+12/03/2023 03:26:11 PM Curently in init.py. App config done.
+12/03/2023 03:26:11 PM  * Debugger is active!
+12/03/2023 03:26:11 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:16 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:17 PM  * Restarting with stat
+12/03/2023 03:26:17 PM Curently in init.py. App config done.
+12/03/2023 03:26:17 PM  * Debugger is active!
+12/03/2023 03:26:17 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:22 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:23 PM  * Restarting with stat
+12/03/2023 03:26:23 PM Curently in init.py. App config done.
+12/03/2023 03:26:23 PM  * Debugger is active!
+12/03/2023 03:26:23 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:25 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:25 PM  * Restarting with stat
+12/03/2023 03:26:25 PM Curently in init.py. App config done.
+12/03/2023 03:26:25 PM  * Debugger is active!
+12/03/2023 03:26:25 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:27 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:27 PM  * Restarting with stat
+12/03/2023 03:26:27 PM Curently in init.py. App config done.
+12/03/2023 03:26:27 PM  * Debugger is active!
+12/03/2023 03:26:27 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:33 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:33 PM  * Restarting with stat
+12/03/2023 03:26:33 PM Curently in init.py. App config done.
+12/03/2023 03:26:33 PM  * Debugger is active!
+12/03/2023 03:26:33 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:37 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:37 PM  * Restarting with stat
+12/03/2023 03:26:37 PM Curently in init.py. App config done.
+12/03/2023 03:26:37 PM  * Debugger is active!
+12/03/2023 03:26:37 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:42 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:43 PM  * Restarting with stat
+12/03/2023 03:26:43 PM Curently in init.py. App config done.
+12/03/2023 03:26:43 PM  * Debugger is active!
+12/03/2023 03:26:43 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:46 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:47 PM  * Restarting with stat
+12/03/2023 03:26:47 PM Curently in init.py. App config done.
+12/03/2023 03:26:47 PM  * Debugger is active!
+12/03/2023 03:26:47 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:26:53 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:26:53 PM  * Restarting with stat
+12/03/2023 03:26:53 PM Curently in init.py. App config done.
+12/03/2023 03:26:53 PM  * Debugger is active!
+12/03/2023 03:26:53 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:02 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:03 PM  * Restarting with stat
+12/03/2023 03:27:03 PM Curently in init.py. App config done.
+12/03/2023 03:27:03 PM  * Debugger is active!
+12/03/2023 03:27:03 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:21 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:21 PM  * Restarting with stat
+12/03/2023 03:27:22 PM Curently in init.py. App config done.
+12/03/2023 03:27:22 PM  * Debugger is active!
+12/03/2023 03:27:22 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:24 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:24 PM  * Restarting with stat
+12/03/2023 03:27:24 PM Curently in init.py. App config done.
+12/03/2023 03:27:24 PM  * Debugger is active!
+12/03/2023 03:27:24 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:32 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:33 PM  * Restarting with stat
+12/03/2023 03:27:33 PM Curently in init.py. App config done.
+12/03/2023 03:27:33 PM  * Debugger is active!
+12/03/2023 03:27:33 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:35 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:35 PM  * Restarting with stat
+12/03/2023 03:27:36 PM Curently in init.py. App config done.
+12/03/2023 03:27:36 PM  * Debugger is active!
+12/03/2023 03:27:36 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:42 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:43 PM  * Restarting with stat
+12/03/2023 03:27:43 PM Curently in init.py. App config done.
+12/03/2023 03:27:43 PM  * Debugger is active!
+12/03/2023 03:27:43 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:45 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:45 PM  * Restarting with stat
+12/03/2023 03:27:45 PM Curently in init.py. App config done.
+12/03/2023 03:27:45 PM  * Debugger is active!
+12/03/2023 03:27:45 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:50 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:50 PM  * Restarting with stat
+12/03/2023 03:27:51 PM Curently in init.py. App config done.
+12/03/2023 03:27:51 PM  * Debugger is active!
+12/03/2023 03:27:51 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:55 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:56 PM  * Restarting with stat
+12/03/2023 03:27:56 PM Curently in init.py. App config done.
+12/03/2023 03:27:56 PM  * Debugger is active!
+12/03/2023 03:27:56 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:27:58 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:27:58 PM  * Restarting with stat
+12/03/2023 03:27:58 PM Curently in init.py. App config done.
+12/03/2023 03:27:58 PM  * Debugger is active!
+12/03/2023 03:27:58 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:03 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:03 PM  * Restarting with stat
+12/03/2023 03:28:04 PM Curently in init.py. App config done.
+12/03/2023 03:28:04 PM  * Debugger is active!
+12/03/2023 03:28:04 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:13 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:13 PM  * Restarting with stat
+12/03/2023 03:28:13 PM Curently in init.py. App config done.
+12/03/2023 03:28:13 PM  * Debugger is active!
+12/03/2023 03:28:13 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:15 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:15 PM  * Restarting with stat
+12/03/2023 03:28:15 PM Curently in init.py. App config done.
+12/03/2023 03:28:15 PM  * Debugger is active!
+12/03/2023 03:28:15 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:16 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:16 PM  * Restarting with stat
+12/03/2023 03:28:17 PM Curently in init.py. App config done.
+12/03/2023 03:28:17 PM  * Debugger is active!
+12/03/2023 03:28:17 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:19 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:19 PM  * Restarting with stat
+12/03/2023 03:28:19 PM Curently in init.py. App config done.
+12/03/2023 03:28:19 PM  * Debugger is active!
+12/03/2023 03:28:19 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:28:27 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:28:28 PM  * Restarting with stat
+12/03/2023 03:28:28 PM Curently in init.py. App config done.
+12/03/2023 03:28:28 PM  * Debugger is active!
+12/03/2023 03:28:28 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:29:13 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:29:13 PM  * Restarting with stat
+12/03/2023 03:29:13 PM Curently in init.py. App config done.
+12/03/2023 03:29:13 PM  * Debugger is active!
+12/03/2023 03:29:13 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:29:23 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:29:24 PM  * Restarting with stat
+12/03/2023 03:29:24 PM Curently in init.py. App config done.
+12/03/2023 03:29:24 PM  * Debugger is active!
+12/03/2023 03:29:24 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:29:29 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:29:29 PM  * Restarting with stat
+12/03/2023 03:29:29 PM Curently in init.py. App config done.
+12/03/2023 03:29:29 PM  * Debugger is active!
+12/03/2023 03:29:29 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:30:14 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:30:15 PM  * Restarting with stat
+12/03/2023 03:30:15 PM Curently in init.py. App config done.
+12/03/2023 03:30:15 PM  * Debugger is active!
+12/03/2023 03:30:15 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:30:17 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:30:17 PM  * Restarting with stat
+12/03/2023 03:30:18 PM Curently in init.py. App config done.
+12/03/2023 03:30:18 PM  * Debugger is active!
+12/03/2023 03:30:18 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:30:40 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:30:40 PM  * Restarting with stat
+12/03/2023 03:30:40 PM Curently in init.py. App config done.
+12/03/2023 03:30:40 PM  * Debugger is active!
+12/03/2023 03:30:40 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:30:44 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:30:44 PM  * Restarting with stat
+12/03/2023 03:30:45 PM Curently in init.py. App config done.
+12/03/2023 03:30:45 PM  * Debugger is active!
+12/03/2023 03:30:45 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:30:56 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:30:56 PM  * Restarting with stat
+12/03/2023 03:30:56 PM Curently in init.py. App config done.
+12/03/2023 03:30:56 PM  * Debugger is active!
+12/03/2023 03:30:56 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:31:08 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:31:08 PM  * Restarting with stat
+12/03/2023 03:31:08 PM Curently in init.py. App config done.
+12/03/2023 03:31:08 PM  * Debugger is active!
+12/03/2023 03:31:08 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:31:29 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:31:29 PM  * Restarting with stat
+12/03/2023 03:31:29 PM Curently in init.py. App config done.
+12/03/2023 03:31:29 PM  * Debugger is active!
+12/03/2023 03:31:29 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:33:40 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/03/2023 03:33:40 PM  * Restarting with stat
+12/03/2023 03:33:40 PM Curently in init.py. App config done.
+12/03/2023 03:33:41 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:33:41 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:33:41 PM  * Debugger is active!
+12/03/2023 03:33:41 PM  * Debugger PIN: 109-648-487
