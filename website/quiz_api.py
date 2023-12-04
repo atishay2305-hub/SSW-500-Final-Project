@@ -1,12 +1,13 @@
 import requests
 
 def get_trivia_question():
-    url = "https://opentdb.com/api.php?amount=46&category=18"
+    url = "https://opentdb.com/api.php?amount=48"
 
     response = requests.get(url)
 
     if response.status_code == 200:
         data = response.json()
+        print(data)
         question = data.get("question")
         answers = data.get("answers", [])
         return question, answers

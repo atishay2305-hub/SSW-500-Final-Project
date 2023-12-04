@@ -1,4 +1,4 @@
-from . import db  # Assuming you've initialized PyMongo as `db`
+from . import db
 from flask_login import UserMixin
 from datetime import datetime
 
@@ -9,11 +9,11 @@ class User(UserMixin):
             "password": password,
             "first_name": first_name
         }
-        db.users.insert_one(user)  # Accessing the 'users' collection using db.db.users
+        db.users.insert_one(user)  
         return user
 
     def get_by_email(self, email):
-        return db.users.find_one({"email": email})  # Accessing the 'users' collection using db.db.users
+        return db.users.find_one({"email": email})  
 
 class Question():
     def __init__(self, q_id, question, option1, option2, option3, correctOption):

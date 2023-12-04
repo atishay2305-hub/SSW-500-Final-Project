@@ -1589,3 +1589,86 @@
 12/03/2023 03:33:41 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
 12/03/2023 03:33:41 PM  * Debugger is active!
 12/03/2023 03:33:41 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:43:44 PM Curently in init.py. App config done.
+12/03/2023 03:43:44 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:43:44 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:43:44 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/03/2023 03:43:44 PM [33mPress CTRL+C to quit[0m
+12/03/2023 03:43:44 PM  * Restarting with stat
+12/03/2023 03:43:44 PM Curently in init.py. App config done.
+12/03/2023 03:43:44 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:43:44 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:43:44 PM  * Debugger is active!
+12/03/2023 03:43:44 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:44:05 PM 127.0.0.1 - - [03/Dec/2023 15:44:05] "GET / HTTP/1.1" 200 -
+12/03/2023 03:44:09 PM 127.0.0.1 - - [03/Dec/2023 15:44:09] "GET /quiz HTTP/1.1" 200 -
+12/03/2023 03:44:14 PM 127.0.0.1 - - [03/Dec/2023 15:44:14] "POST /submitquiz HTTP/1.1" 200 -
+12/03/2023 03:44:16 PM 127.0.0.1 - - [03/Dec/2023 15:44:16] "GET / HTTP/1.1" 200 -
+12/03/2023 03:45:01 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:45:01 PM  * Restarting with stat
+12/03/2023 03:45:01 PM Curently in init.py. App config done.
+12/03/2023 03:45:01 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:45:01 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:45:01 PM  * Debugger is active!
+12/03/2023 03:45:01 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:45:56 PM Curently in init.py. App config done.
+12/03/2023 03:45:56 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:45:56 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:45:56 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/03/2023 03:45:56 PM [33mPress CTRL+C to quit[0m
+12/03/2023 03:45:56 PM  * Restarting with stat
+12/03/2023 03:45:56 PM Curently in init.py. App config done.
+12/03/2023 03:45:56 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:45:56 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:45:56 PM  * Debugger is active!
+12/03/2023 03:45:56 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:46:40 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:46:40 PM  * Restarting with stat
+12/03/2023 03:46:40 PM Curently in init.py. App config done.
+12/03/2023 03:46:40 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:46:40 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:46:40 PM  * Debugger is active!
+12/03/2023 03:46:40 PM  * Debugger PIN: 109-648-487
+12/03/2023 03:46:51 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 03:46:51 PM  * Restarting with stat
+12/03/2023 03:46:51 PM Curently in init.py. App config done.
+12/03/2023 03:46:51 PM Starting new HTTPS connection (1): example.com:443
+12/03/2023 03:46:51 PM https://example.com:443 "GET /api/trivia HTTP/1.1" 404 648
+12/03/2023 03:46:51 PM  * Debugger is active!
+12/03/2023 03:46:51 PM  * Debugger PIN: 109-648-487
+12/03/2023 09:03:07 PM Curently in init.py. App config done.
+12/03/2023 09:03:07 PM Starting new HTTPS connection (1): opentdb.com:443
+12/03/2023 09:03:07 PM https://opentdb.com:443 "GET /api.php?amount=50 HTTP/1.1" 200 None
+12/03/2023 09:03:07 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/03/2023 09:03:07 PM [33mPress CTRL+C to quit[0m
+12/03/2023 09:03:07 PM  * Restarting with stat
+12/03/2023 09:03:08 PM Curently in init.py. App config done.
+12/03/2023 09:03:08 PM Starting new HTTPS connection (1): opentdb.com:443
+12/03/2023 09:03:08 PM https://opentdb.com:443 "GET /api.php?amount=50 HTTP/1.1" 429 None
+12/03/2023 09:03:08 PM  * Debugger is active!
+12/03/2023 09:03:08 PM  * Debugger PIN: 109-648-487
+12/03/2023 09:06:19 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/03/2023 09:06:20 PM  * Restarting with stat
+12/03/2023 09:06:20 PM Curently in init.py. App config done.
+12/03/2023 09:06:20 PM Starting new HTTPS connection (1): opentdb.com:443
+12/03/2023 09:06:20 PM https://opentdb.com:443 "GET /api.php?amount=48 HTTP/1.1" 200 None
+12/03/2023 09:06:20 PM  * Debugger is active!
+12/03/2023 09:06:20 PM  * Debugger PIN: 109-648-487
+12/03/2023 09:06:37 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/quiz_api.py', reloading
+12/03/2023 09:06:38 PM  * Restarting with stat
+12/03/2023 09:06:38 PM Curently in init.py. App config done.
+12/03/2023 09:06:38 PM Starting new HTTPS connection (1): opentdb.com:443
+12/03/2023 09:06:38 PM https://opentdb.com:443 "GET /api.php?amount=48 HTTP/1.1" 200 None
+12/03/2023 09:06:38 PM  * Debugger is active!
+12/03/2023 09:06:38 PM  * Debugger PIN: 109-648-487
+12/03/2023 09:06:53 PM 127.0.0.1 - - [03/Dec/2023 21:06:53] "GET / HTTP/1.1" 200 -
+12/03/2023 09:06:57 PM 127.0.0.1 - - [03/Dec/2023 21:06:57] "GET /quiz HTTP/1.1" 200 -
+12/03/2023 09:06:58 PM 127.0.0.1 - - [03/Dec/2023 21:06:58] "POST /submitquiz HTTP/1.1" 200 -
+12/03/2023 09:07:00 PM 127.0.0.1 - - [03/Dec/2023 21:07:00] "GET / HTTP/1.1" 200 -
+12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

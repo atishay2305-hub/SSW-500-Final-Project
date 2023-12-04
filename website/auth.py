@@ -7,9 +7,8 @@ import requests
 
 auth = Blueprint('auth', __name__)
 
-# Define a function to get trivia questions from the API
 def get_trivia_questions():
-    api_url = "https://example.com/api/trivia"  # Replace with the actual API URL
+    api_url = "https://opentdb.com/api.php?amount=48"  # Replace with the actual API URL
     response = requests.get(api_url)
 
     if response.status_code == 200:
@@ -20,7 +19,6 @@ def get_trivia_questions():
         print(f"Error: {response.status_code}")
         return []
 
-# Get trivia questions dynamically from the API
 questions_list = get_trivia_questions()
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -48,9 +46,7 @@ def login():
 @auth.route('/logout')
 @login_required
 def logout():
-    # logout_user()
     return redirect(url_for('auth.login'))
-
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
