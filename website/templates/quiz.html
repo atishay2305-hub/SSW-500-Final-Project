@@ -17,9 +17,9 @@
   <form action="/submitquiz" method="post">
     {% for question in questions_list %}
       <h4>{{ question.question }}</h4>
-      <input type="radio" name="{{ question.q_id }}" value="{{ question.option1 }}"> {{ question.option1 }} <br>
-      <input type="radio" name="{{ question.q_id }}" value="{{ question.option2 }}"> {{ question.option2 }} <br>
-      <input type="radio" name="{{ question.q_id }}" value="{{ question.option3 }}"> {{ question.option3 }} <br><br>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.incorrect_answers[0] }}"> {{ question.incorrect_answers[0] }} <br>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.incorrect_answers[1] }}"> {{ question.incorrect_answers[1] }} <br>
+      <input type="radio" name="{{ question.q_id }}" value="{{ question.correct_answer }}"> {{ question.correct_answer }} <br><br>
     {% endfor %}
 
     <input type="submit" name="submitform" value="Submit">

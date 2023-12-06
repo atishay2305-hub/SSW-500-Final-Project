@@ -1672,3 +1672,156 @@
 12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
 12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 12/03/2023 09:07:01 PM 127.0.0.1 - - [03/Dec/2023 21:07:01] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:25:39 PM Curently in init.py. App config done.
+12/06/2023 03:25:39 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/06/2023 03:25:39 PM [33mPress CTRL+C to quit[0m
+12/06/2023 03:25:39 PM  * Restarting with stat
+12/06/2023 03:25:39 PM Curently in init.py. App config done.
+12/06/2023 03:25:39 PM  * Debugger is active!
+12/06/2023 03:25:39 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:25:44 PM 127.0.0.1 - - [06/Dec/2023 15:25:44] "GET / HTTP/1.1" 200 -
+12/06/2023 03:25:58 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:25:58 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:25:58 PM 127.0.0.1 - - [06/Dec/2023 15:25:58] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:25:58 PM 127.0.0.1 - - [06/Dec/2023 15:25:58] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:26:04 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:26:04 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:26:04 PM 127.0.0.1 - - [06/Dec/2023 15:26:04] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:26:04 PM 127.0.0.1 - - [06/Dec/2023 15:26:04] "GET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+12/06/2023 03:26:04 PM 127.0.0.1 - - [06/Dec/2023 15:26:04] "GET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+12/06/2023 03:26:04 PM 127.0.0.1 - - [06/Dec/2023 15:26:04] "GET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+12/06/2023 03:26:04 PM 127.0.0.1 - - [06/Dec/2023 15:26:04] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:27:02 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/06/2023 03:27:03 PM  * Restarting with stat
+12/06/2023 03:27:03 PM Curently in init.py. App config done.
+12/06/2023 03:27:03 PM  * Debugger is active!
+12/06/2023 03:27:03 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:27:18 PM Curently in init.py. App config done.
+12/06/2023 03:27:18 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/06/2023 03:27:18 PM [33mPress CTRL+C to quit[0m
+12/06/2023 03:27:18 PM  * Restarting with stat
+12/06/2023 03:27:19 PM Curently in init.py. App config done.
+12/06/2023 03:27:19 PM  * Debugger is active!
+12/06/2023 03:27:19 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:27:23 PM 127.0.0.1 - - [06/Dec/2023 15:27:23] "GET / HTTP/1.1" 200 -
+12/06/2023 03:27:27 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:27:27 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:27:27 PM 127.0.0.1 - - [06/Dec/2023 15:27:27] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:27:27 PM 127.0.0.1 - - [06/Dec/2023 15:27:27] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:27:35 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:27:35 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:27:35 PM 127.0.0.1 - - [06/Dec/2023 15:27:35] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:27:35 PM 127.0.0.1 - - [06/Dec/2023 15:27:35] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:27:35 PM 127.0.0.1 - - [06/Dec/2023 15:27:35] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:27:35 PM 127.0.0.1 - - [06/Dec/2023 15:27:35] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:27:45 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:27:45 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:27:45 PM 127.0.0.1 - - [06/Dec/2023 15:27:45] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:27:45 PM 127.0.0.1 - - [06/Dec/2023 15:27:45] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:27:45 PM 127.0.0.1 - - [06/Dec/2023 15:27:45] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:27:45 PM 127.0.0.1 - - [06/Dec/2023 15:27:45] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:27:45 PM 127.0.0.1 - - [06/Dec/2023 15:27:45] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:27:48 PM 127.0.0.1 - - [06/Dec/2023 15:27:48] "GET / HTTP/1.1" 200 -
+12/06/2023 03:27:49 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:27:49 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 429 None
+12/06/2023 03:27:49 PM 127.0.0.1 - - [06/Dec/2023 15:27:49] "[35m[1mGET /quiz HTTP/1.1[0m" 500 -
+12/06/2023 03:27:50 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:27:50 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:27:50 PM 127.0.0.1 - - [06/Dec/2023 15:27:50] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:27:50 PM 127.0.0.1 - - [06/Dec/2023 15:27:50] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:28:14 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:28:14 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:28:14 PM 127.0.0.1 - - [06/Dec/2023 15:28:14] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:28:14 PM 127.0.0.1 - - [06/Dec/2023 15:28:14] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:28:14 PM 127.0.0.1 - - [06/Dec/2023 15:28:14] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:28:14 PM 127.0.0.1 - - [06/Dec/2023 15:28:14] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:28:44 PM 127.0.0.1 - - [06/Dec/2023 15:28:44] "GET / HTTP/1.1" 200 -
+12/06/2023 03:28:45 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:28:45 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:28:45 PM 127.0.0.1 - - [06/Dec/2023 15:28:45] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:28:45 PM 127.0.0.1 - - [06/Dec/2023 15:28:45] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:28:54 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:28:54 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:28:54 PM 127.0.0.1 - - [06/Dec/2023 15:28:54] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:28:54 PM 127.0.0.1 - - [06/Dec/2023 15:28:54] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:28:54 PM 127.0.0.1 - - [06/Dec/2023 15:28:54] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:28:54 PM 127.0.0.1 - - [06/Dec/2023 15:28:54] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:30:41 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/06/2023 03:30:42 PM  * Restarting with stat
+12/06/2023 03:30:43 PM Curently in init.py. App config done.
+12/06/2023 03:30:43 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/06/2023 03:30:43 PM [33mPress CTRL+C to quit[0m
+12/06/2023 03:30:43 PM  * Restarting with stat
+12/06/2023 03:30:43 PM Curently in init.py. App config done.
+12/06/2023 03:30:43 PM  * Debugger is active!
+12/06/2023 03:30:43 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:30:49 PM 127.0.0.1 - - [06/Dec/2023 15:30:49] "GET / HTTP/1.1" 200 -
+12/06/2023 03:30:50 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:30:50 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:30:50 PM 127.0.0.1 - - [06/Dec/2023 15:30:50] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:30:50 PM 127.0.0.1 - - [06/Dec/2023 15:30:50] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:30:56 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:30:56 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:30:56 PM 127.0.0.1 - - [06/Dec/2023 15:30:56] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:30:56 PM 127.0.0.1 - - [06/Dec/2023 15:30:56] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:30:56 PM 127.0.0.1 - - [06/Dec/2023 15:30:56] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:30:56 PM 127.0.0.1 - - [06/Dec/2023 15:30:56] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:31:24 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/06/2023 03:31:24 PM  * Restarting with stat
+12/06/2023 03:31:26 PM Curently in init.py. App config done.
+12/06/2023 03:31:26 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/06/2023 03:31:26 PM [33mPress CTRL+C to quit[0m
+12/06/2023 03:31:26 PM  * Restarting with stat
+12/06/2023 03:31:26 PM Curently in init.py. App config done.
+12/06/2023 03:31:26 PM  * Debugger is active!
+12/06/2023 03:31:26 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:31:31 PM 127.0.0.1 - - [06/Dec/2023 15:31:31] "GET / HTTP/1.1" 200 -
+12/06/2023 03:31:32 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:31:32 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:31:32 PM 127.0.0.1 - - [06/Dec/2023 15:31:32] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:31:32 PM 127.0.0.1 - - [06/Dec/2023 15:31:32] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:31:36 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:31:36 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 429 None
+12/06/2023 03:31:36 PM 127.0.0.1 - - [06/Dec/2023 15:31:36] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:31:36 PM 127.0.0.1 - - [06/Dec/2023 15:31:36] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+12/06/2023 03:31:36 PM 127.0.0.1 - - [06/Dec/2023 15:31:36] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+12/06/2023 03:31:36 PM 127.0.0.1 - - [06/Dec/2023 15:31:36] "[36mGET /submitquiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+12/06/2023 03:32:05 PM  * Detected change in '/Users/atishayjain/Desktop/SSW-500-Final-Project/website/auth.py', reloading
+12/06/2023 03:32:06 PM  * Restarting with stat
+12/06/2023 03:32:06 PM Curently in init.py. App config done.
+12/06/2023 03:32:06 PM  * Debugger is active!
+12/06/2023 03:32:06 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:32:08 PM Curently in init.py. App config done.
+12/06/2023 03:32:08 PM [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12/06/2023 03:32:08 PM [33mPress CTRL+C to quit[0m
+12/06/2023 03:32:08 PM  * Restarting with stat
+12/06/2023 03:32:08 PM Curently in init.py. App config done.
+12/06/2023 03:32:08 PM  * Debugger is active!
+12/06/2023 03:32:08 PM  * Debugger PIN: 109-648-487
+12/06/2023 03:32:13 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:32:13 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:32:13 PM 127.0.0.1 - - [06/Dec/2023 15:32:13] "POST /submitquiz HTTP/1.1" 200 -
+12/06/2023 03:32:13 PM 127.0.0.1 - - [06/Dec/2023 15:32:13] "[33mGET /static/result.css HTTP/1.1[0m" 404 -
+12/06/2023 03:32:17 PM 127.0.0.1 - - [06/Dec/2023 15:32:17] "GET / HTTP/1.1" 200 -
+12/06/2023 03:32:17 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:32:18 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:32:18 PM 127.0.0.1 - - [06/Dec/2023 15:32:18] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:32:18 PM 127.0.0.1 - - [06/Dec/2023 15:32:18] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:32:21 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:32:21 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 429 None
+12/06/2023 03:32:21 PM 127.0.0.1 - - [06/Dec/2023 15:32:21] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:32:21 PM 127.0.0.1 - - [06/Dec/2023 15:32:21] "[33mGET /static/error.css HTTP/1.1[0m" 404 -
+12/06/2023 03:32:28 PM 127.0.0.1 - - [06/Dec/2023 15:32:28] "GET / HTTP/1.1" 200 -
+12/06/2023 03:32:31 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:32:31 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 200 None
+12/06/2023 03:32:31 PM 127.0.0.1 - - [06/Dec/2023 15:32:31] "GET /quiz HTTP/1.1" 200 -
+12/06/2023 03:32:31 PM 127.0.0.1 - - [06/Dec/2023 15:32:31] "[33mGET /static/quiz.css HTTP/1.1[0m" 404 -
+12/06/2023 03:32:34 PM Starting new HTTPS connection (1): opentdb.com:443
+12/06/2023 03:32:34 PM https://opentdb.com:443 "GET /api.php?amount=2&category=10 HTTP/1.1" 429 None
+12/06/2023 03:32:34 PM 127.0.0.1 - - [06/Dec/2023 15:32:34] "[35m[1mPOST /submitquiz HTTP/1.1[0m" 500 -
+12/06/2023 03:32:34 PM 127.0.0.1 - - [06/Dec/2023 15:32:34] "[33mGET /static/error.css HTTP/1.1[0m" 404 -

@@ -9,19 +9,20 @@ import json
 auth = Blueprint('auth', __name__)
 
 def get_trivia_questions():
-    API_URL="https://opentdb.com/api.php"
-    params = {"amount":2,"category": 10}
-    
-    response = requests.get(API_URL,params=params)
-    print("in get questions : ",response)
+    API_URL = "https://opentdb.com/api.php"
+    params = {"amount": 2, "category": 10}
+
+    response = requests.get(API_URL, params=params)
 
     if response.status_code == 200:
-        questions=json.loads(response.text)
-        print("in get questions : ",questions)
-        return questions
+        questions_data = json.loads(response.text)
+        # Extract the questions list from the data
+        questions_list = questions_data.get("results", [])
+        return questions_list
     else:
         print(f"Error: {response.status_code}")
-        return {}
+        return None
+
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
@@ -98,14 +99,41 @@ def quiz():
 def submit():
     correct_count = 0
     questions_list = get_trivia_questions()
+
+    # Check if questions_list is None
+    if questions_list is None:
+        print("Error: Questions list is None")
+        return render_template("error.html"), 500
+
+    # Check if questions_list is iterable
+    if not isinstance(questions_list, list):
+        print("Error: Questions list is not iterable")
+        return render_template("error.html"), 500
+
     for question in questions_list:
-        question_id = str(question.q_id)
-        selected_option = request.form[question_id]
-        correct_option = question.get_correct_option()
+        # Modify this part based on the actual structure of the question data
+        question_id = str(question.get('id'))  # Adjust based on the actual structure
+
+        # Add debugging statements
+        print(f"Question ID: {question_id}")
+        print(f"Form data keys: {list(request.form.keys())}")
+
+        try:
+            selected_option = request.form[question_id]
+        except KeyError as e:
+            print(f"KeyError: {e}")
+            continue  # Skip to the next iteration if the key is not present
+
+        print(f"Selected option: {selected_option}")
+
+        correct_option = question.get('correct_answer')  # Adjust based on the actual structure
+
         if selected_option == correct_option:
             correct_count += 1
 
     return render_template("result.html", correct_count=correct_count)
+
+
 
 @auth.route('/', defaults={'path': ''})
 @auth.route('/<path:path>')
