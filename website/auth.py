@@ -8,7 +8,7 @@ import requests
 auth = Blueprint('auth', __name__)
 
 def get_trivia_questions():
-    api_url = "https://opentdb.com/api.php?amount=48"  # Replace with the actual API URL
+    api_url = "https://opentdb.com/api.php?amount=10?category=50"  # Replace with the actual API URL
     response = requests.get(api_url)
 
     if response.status_code == 200:
@@ -19,8 +19,6 @@ def get_trivia_questions():
         print(f"Error: {response.status_code}")
         return []
 
-questions_list = get_trivia_questions()
-
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -29,11 +27,12 @@ def login():
 
         user_collection = db.users
         user = user_collection.find_one({'email': email})
-
+        # user_object=User()
+        # user=user_object.get_by_email(email)
         if user:
             if check_password_hash(user['password'], password):
                 flash('Logged in successfully!', category='success')
-                login_user(User(user['_id'], user['email'], user['password'], user['first_name']), remember=True)
+                login_user(user, remember=True)
                 return redirect(url_for('auth.quiz'))
             else:
                 flash('Incorrect password, try again.', category='error')
@@ -86,12 +85,14 @@ def sign_up():
 @login_required
 @auth.route("/quiz")
 def quiz():
+    questions_list = get_trivia_questions()
     return render_template("quiz.html", questions_list=questions_list)
 
 @login_required
 @auth.route("/submitquiz", methods=['POST', 'GET'])
 def submit():
     correct_count = 0
+    questions_list = get_trivia_questions()
     for question in questions_list:
         question_id = str(question.q_id)
         selected_option = request.form[question_id]
