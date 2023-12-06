@@ -4,20 +4,24 @@ from .models import User, Question
 from . import db
 from flask_login import login_user, login_required, current_user
 import requests
+import json
 
 auth = Blueprint('auth', __name__)
 
 def get_trivia_questions():
-    api_url = "https://opentdb.com/api.php?amount=10?category=50"  # Replace with the actual API URL
-    response = requests.get(api_url)
+    API_URL="https://opentdb.com/api.php"
+    params = {"amount":2,"category": 10}
+    
+    response = requests.get(API_URL,params=params)
+    print("in get questions : ",response)
 
     if response.status_code == 200:
-        data = response.json()
-        questions_data = data.get("questions", [])
-        return [Question(**q) for q in questions_data]
+        questions=json.loads(response.text)
+        print("in get questions : ",questions)
+        return questions
     else:
         print(f"Error: {response.status_code}")
-        return []
+        return {}
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
@@ -32,7 +36,7 @@ def login():
         if user:
             if check_password_hash(user['password'], password):
                 flash('Logged in successfully!', category='success')
-                login_user(user, remember=True)
+                #login_user(user, remember=True)
                 return redirect(url_for('auth.quiz'))
             else:
                 flash('Incorrect password, try again.', category='error')
@@ -86,6 +90,7 @@ def sign_up():
 @auth.route("/quiz")
 def quiz():
     questions_list = get_trivia_questions()
+    print(questions_list)
     return render_template("quiz.html", questions_list=questions_list)
 
 @login_required
