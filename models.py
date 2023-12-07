@@ -1,16 +1,24 @@
-class Question():
-    def __init__(self, q_id, question, option1, option2, option3, correctOption):
+# models.py
+class Question:
+    def __init__(self, q_id, question, options, correct_option):
         self.q_id = q_id
         self.question = question
-        self.option1 = option1
-        self.option2 = option2
-        self.option3 = option3
-        self.correctOption = correctOption
+        self.options = options
+        self.correct_option = correct_option
 
-    def get_correct_option(self):
-        if self.correctOption == 1:
-            return self.option1
-        elif self.correctOption == 2:
-            return self.option2
-        elif self.correctOption == 3:
-            return self.option3
+    def to_dict(self):
+        return {
+            'q_id': self.q_id,
+            'question': self.question,
+            'options': self.options,
+            'correct_option': self.correct_option
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            q_id=data['q_id'],
+            question=data['question'],
+            options=data['options'],
+            correct_option=data['correct_option']
+        )

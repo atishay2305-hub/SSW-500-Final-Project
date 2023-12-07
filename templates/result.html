@@ -3,6 +3,47 @@
 {% block title %}Quiz Result{% endblock %}
 
 {% block content %}
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .correct-answer {
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .incorrect-answer {
+      color: #dc3545;
+      font-weight: bold;
+    }
+  </style>
+
   <h1>Quiz Result</h1>
   <p>You answered {{ correct_count }} out of {{ total_questions }} questions correctly.</p>
+
+  {% for feedback in feedback_list %}
+    <p>
+      Question {{ feedback.index + 1 }}:<br>
+      Selected Option: {{ feedback.selected_option }}<br>
+      Correct Option: <span class="{% if feedback.is_correct %}correct-answer{% else %}incorrect-answer{% endif %}">{{ feedback.correct_option }}</span><br>
+      {% if feedback.is_correct %}
+        Your answer is correct!
+      {% else %}
+        Your answer is incorrect.
+      {% endif %}
+    </p>
+  {% endfor %}
 {% endblock %}

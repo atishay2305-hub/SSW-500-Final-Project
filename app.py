@@ -1,26 +1,20 @@
-from flask import Flask, render_template, request, redirect, url_for, session, Blueprint, flash
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from pymongo import MongoClient
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import LoginManager, UserMixin, login_user, login_required, current_user
-import requests
-import json
+from flask_login import LoginManager, UserMixin, login_user, login_required
 import secrets
-import time
-from requests.exceptions import RequestException
+from models import Question
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
-# MongoDB connection
 client = MongoClient('mongodb://localhost:27017/')
 db = client['user_db']
 users = db['users']
 
-# Flask-Login setup
 login_manager = LoginManager(app)
-login_manager.login_view = 'auth.login'
+login_manager.login_view = 'login'
 
-# User class for Flask-Login
 class User(UserMixin):
     def __init__(self, username, password):
         self.username = username
@@ -28,9 +22,6 @@ class User(UserMixin):
 
     def get_id(self):
         return self.username
-
-# Auth Blueprint
-auth = Blueprint('auth', __name__)
 
 @login_manager.user_loader
 def load_user(username):
@@ -40,83 +31,21 @@ def load_user(username):
     return None
 
 def get_trivia_questions():
-    API_URL = "https://opentdb.com/api.php"
-    params = {"amount": 2, "category": 10}
-    headers = {"User-Agent": "YourApp/1.0"}
+    questions = [
+        Question(1, "What is the capital of France?", ["Paris", "Berlin", "London"], "Paris"),
+        Question(2, "Which planet is known as the Red Planet?", ["Mars", "Venus", "Jupiter"], "Mars"),
+        Question(3, "What is the largest mammal in the world?", ["Elephant", "Blue Whale", "Giraffe"], "Blue Whale"),
+        Question(4, "In which year did World War II end?", ["1943", "1945", "1950"], "1945"),
+        Question(5, "What is the chemical symbol for gold?", ["Au", "Ag", "Fe"], "Au"),
+        Question(6, "Who wrote 'Romeo and Juliet'?", ["Charles Dickens", "William Shakespeare", "Jane Austen"], "William Shakespeare"),
+        Question(7, "What is the largest ocean on Earth?", ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"], "Pacific Ocean"),
+        Question(8, "What is the speed of light?", ["299,792 kilometers per second", "150,000 kilometers per second", "450,000 kilometers per second"], "299,792 kilometers per second"),
+        Question(9, "Who painted the Mona Lisa?", ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso"], "Leonardo da Vinci"),
+        Question(10, "What is the capital of Japan?", ["Seoul", "Beijing", "Tokyo"], "Tokyo"),
+    ]
+    return questions
 
-    max_retries = 3
-    current_retry = 0
 
-    while current_retry < max_retries:
-        try:
-            url = f"{API_URL}?amount={params['amount']}&category={params['category']}"
-            print(f"Request URL: {url}")
-            print(f"Request Parameters: {params}")
-
-            response = requests.get(url, headers=headers)
-
-            if response.status_code == 200:
-                questions_data = json.loads(response.text)
-                questions_list = questions_data.get("results", [])
-                return questions_list
-            elif response.status_code == 429:
-                print("Rate limit exceeded. Retrying after a delay...")
-                time.sleep(5)  # Wait for 5 seconds before retrying
-                current_retry += 1
-            else:
-                print(f"Error: {response.status_code}")
-                return None
-
-        except RequestException as e:
-            print(f"RequestException: {e}")
-            print("Retrying after a delay...")
-            time.sleep(5)  # Wait for 5 seconds before retrying
-            current_retry += 1
-
-    print("Exceeded the maximum number of retries. Unable to fetch questions.")
-    return None
-
-@auth.route("/quiz")
-@login_required
-def quiz():
-    questions_list = get_trivia_questions()
-    print(questions_list)
-    return render_template("quiz.html", questions_list=questions_list)
-
-@auth.route("/submitquiz", methods=['POST', 'GET'])
-@login_required
-def submit():
-    correct_count = 0
-    questions_list = get_trivia_questions()
-
-    if questions_list is None or not isinstance(questions_list, list):
-        print("Error: Questions list is None or not iterable")
-        return render_template("error.html"), 500
-
-    for question in questions_list:
-        question_id = str(question.get('id'))
-
-        try:
-            selected_option = request.form[question_id]
-        except KeyError as e:
-            print(f"KeyError: {e}")
-            continue
-
-        correct_option = question.get('correct_answer')
-
-        print(f"Question ID: {question_id}")
-        print(f"Selected Option: {selected_option}")
-        print(f"Correct Option: {correct_option}")
-
-        if selected_option == correct_option:
-            correct_count += 1
-
-    return render_template("result.html", correct_count=correct_count, total_questions=len(questions_list))
-
-# Register the auth blueprint
-app.register_blueprint(auth)
-
-# Routes
 @app.route('/')
 def home():
     if 'username' in session:
@@ -127,8 +56,6 @@ def home():
 @login_required
 def dashboard():
     return render_template('dashboard.html')
-
-from flask import redirect, url_for
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -148,11 +75,9 @@ def register():
             session['username'] = username
             flash('Registration successful!', category='success')
 
-            # Redirect to the login page after successful registration
             return redirect(url_for('login'))
 
     return render_template('register.html')
-
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -163,7 +88,7 @@ def login():
         user = users.find_one({'username': username})
         if user and check_password_hash(user['password'], password):
             login_user(User(username=user['username'], password=user['password']))
-            return redirect(url_for('auth.quiz'))
+            return redirect(url_for('quiz'))
         else:
             flash('Invalid username or password!', category='error')
 
@@ -177,6 +102,51 @@ def logout():
         return redirect(url_for('home'))
 
     return 'Method Not Allowed', 405
+
+@app.route('/quiz')
+@login_required
+def quiz():
+    questions_list = get_trivia_questions()
+    return render_template("quiz.html", questions_list=questions_list)
+
+@app.route('/submitquiz', methods=['POST', 'GET'])
+@login_required
+def submit():
+    questions_list = get_trivia_questions()
+
+    if questions_list is None or not isinstance(questions_list, list):
+        print("Error: Questions list is None or not iterable")
+        return render_template("error.html"), 500
+
+    correct_count = 0
+    feedback_list = []
+
+    for index, question in enumerate(questions_list):
+        question_id = str(question.q_id)
+
+        try:
+            selected_option = request.form[question_id]
+        except KeyError as e:
+            print(f"KeyError: {e}")
+            continue
+
+        correct_option = str(question.correct_option)
+
+        print(f"Question ID: {question_id}")
+        print(f"Selected Option: {selected_option}")
+        print(f"Correct Option: {correct_option}")
+
+        if str(selected_option) == correct_option:
+            correct_count += 1
+
+        feedback_list.append({
+            'index': index,
+            'selected_option': selected_option,
+            'correct_option': correct_option,
+            'is_correct': str(selected_option) == correct_option
+        })
+
+    return render_template("result.html", correct_count=correct_count, total_questions=len(questions_list), feedback_list=feedback_list)
 
 if __name__ == '__main__':
     app.run(debug=True)
