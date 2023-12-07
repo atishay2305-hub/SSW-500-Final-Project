@@ -123,6 +123,7 @@ def submit():
 
     for index, question in enumerate(questions_list):
         question_id = str(question.q_id)
+        
 
         try:
             selected_option = request.form[question_id]
