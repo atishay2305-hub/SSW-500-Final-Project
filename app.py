@@ -5,6 +5,8 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, cur
 import requests
 import json
 import secrets
+import time
+from requests.exceptions import RequestException
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
@@ -36,16 +38,6 @@ def load_user(username):
     if user_data:
         return User(username=user_data['username'], password=user_data['password'])
     return None
-
-
-import time
-from requests.exceptions import RequestException
-
-import time
-from requests.exceptions import RequestException
-
-import time
-from requests.exceptions import RequestException
 
 def get_trivia_questions():
     API_URL = "https://opentdb.com/api.php"
