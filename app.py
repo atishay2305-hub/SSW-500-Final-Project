@@ -88,7 +88,7 @@ def login():
         user = users.find_one({'username': username})
         if user and check_password_hash(user['password'], password):
             login_user(User(username=user['username'], password=user['password']))
-            return redirect(url_for('quiz'))
+            return redirect(url_for('dashboard'))
         else:
             flash('Invalid username or password!', category='error')
 
@@ -123,7 +123,7 @@ def submit():
 
     for index, question in enumerate(questions_list):
         question_id = str(question.q_id)
-        
+
 
         try:
             selected_option = request.form[question_id]
