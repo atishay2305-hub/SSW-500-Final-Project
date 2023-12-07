@@ -37,19 +37,55 @@ def load_user(username):
         return User(username=user_data['username'], password=user_data['password'])
     return None
 
+
+import time
+from requests.exceptions import RequestException
+
+import time
+from requests.exceptions import RequestException
+
+import time
+from requests.exceptions import RequestException
+
 def get_trivia_questions():
     API_URL = "https://opentdb.com/api.php"
     params = {"amount": 2, "category": 10}
+    headers = {"User-Agent": "YourApp/1.0"}
 
-    response = requests.get(API_URL, params=params)
+    max_retries = 3
+    current_retry = 0
 
-    if response.status_code == 200:
-        questions_data = json.loads(response.text)
-        questions_list = questions_data.get("results", [])
-        return questions_list
-    else:
-        print(f"Error: {response.status_code}")
-        return None
+    while current_retry < max_retries:
+        try:
+            url = f"{API_URL}?amount={params['amount']}&category={params['category']}"
+            print(f"Request URL: {url}")
+            print(f"Request Parameters: {params}")
+
+            response = requests.get(url, headers=headers)
+
+            if response.status_code == 200:
+                questions_data = json.loads(response.text)
+                questions_list = questions_data.get("results", [])
+                return questions_list
+            elif response.status_code == 429:
+                print("Rate limit exceeded. Retrying after a delay...")
+                time.sleep(5)  # Wait for 5 seconds before retrying
+                current_retry += 1
+            else:
+                print(f"Error: {response.status_code}")
+                return None
+
+        except RequestException as e:
+            print(f"RequestException: {e}")
+            print("Retrying after a delay...")
+            time.sleep(5)  # Wait for 5 seconds before retrying
+            current_retry += 1
+
+    print("Exceeded the maximum number of retries. Unable to fetch questions.")
+    return None
+
+
+
 
 @auth.route("/quiz")
 @login_required
@@ -79,6 +115,10 @@ def submit():
 
         correct_option = question.get('correct_answer')
 
+        print(f"Question ID: {question_id}")
+        print(f"Selected Option: {selected_option}")
+        print(f"Correct Option: {correct_option}")
+
         if selected_option == correct_option:
             correct_count += 1
 
@@ -92,7 +132,7 @@ app.register_blueprint(auth)
 def home():
     if 'username' in session:
         return f'Logged in as {session["username"]}'
-    return 'You are not logged in'
+    return render_template('landing.html')
 
 @app.route('/dashboard')
 @login_required
