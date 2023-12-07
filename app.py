@@ -76,9 +76,6 @@ def get_trivia_questions():
     print("Exceeded the maximum number of retries. Unable to fetch questions.")
     return None
 
-
-
-
 @auth.route("/quiz")
 @login_required
 def quiz():
@@ -131,6 +128,8 @@ def home():
 def dashboard():
     return render_template('dashboard.html')
 
+from flask import redirect, url_for
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -149,7 +148,11 @@ def register():
             session['username'] = username
             flash('Registration successful!', category='success')
 
+            # Redirect to the login page after successful registration
+            return redirect(url_for('login'))
+
     return render_template('register.html')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
