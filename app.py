@@ -37,11 +37,6 @@ def get_trivia_questions():
         Question(3, "What is the largest mammal in the world?", ["Elephant", "Blue Whale", "Giraffe"], "Blue Whale"),
         Question(4, "In which year did World War II end?", ["1943", "1945", "1950"], "1945"),
         Question(5, "What is the chemical symbol for gold?", ["Au", "Ag", "Fe"], "Au"),
-        Question(6, "Who wrote 'Romeo and Juliet'?", ["Charles Dickens", "William Shakespeare", "Jane Austen"], "William Shakespeare"),
-        Question(7, "What is the largest ocean on Earth?", ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"], "Pacific Ocean"),
-        Question(8, "What is the speed of light?", ["299,792 kilometers per second", "150,000 kilometers per second", "450,000 kilometers per second"], "299,792 kilometers per second"),
-        Question(9, "Who painted the Mona Lisa?", ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso"], "Leonardo da Vinci"),
-        Question(10, "What is the capital of Japan?", ["Seoul", "Beijing", "Tokyo"], "Tokyo"),
     ]
     return questions
 
