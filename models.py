@@ -1,4 +1,3 @@
-# models.py
 class Question:
     def __init__(self, q_id, question, options, correct_option):
         self.q_id = q_id
