@@ -2,7 +2,7 @@
 Application: Python Quiz Application 
 
 # Technologies used: 
-Flask, MongoDB, 
+Flask, MongoDB
 
 # Overview
 This project offers a dynamic web application featuring a Trivia quiz game with user authentication for personalized experiences. The aim is to provide an engaging platform for users to test their knowledge across various topics.
@@ -24,12 +24,14 @@ This project offers a dynamic web application featuring a Trivia quiz game with 
 --> app.py: Entry point of the code. Contains logic, routes, and API calls. To run the code, execute app.py. The code is hosted on http://127.0.0.1:5000/.
 
 --> models.py: Defines classes to structure the set of questions obtained from the API.
-API Used: Open Trivia Database
 
 --> static folder : contains images used throughout the website
 
+# API 
+--> API Used: [Open Trivia Database](https://opentdb.com/api.php)
+
 # Running the Application
-Run app.py.
+Run app.py
 Visit http://127.0.0.1:5000/ in your browser.
 Register with your details or log in using your credentials.
 Access the quiz by selecting "Take Quiz" on the dashboard.
