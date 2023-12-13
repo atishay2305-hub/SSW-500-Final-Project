@@ -50,7 +50,7 @@ def get_trivia_questions():
         if 'results' in data:
             questions = data['results']
             for question in questions:
-                decoded_question = html.unescape(question.get('question'))  # Decode HTML entities
+                decoded_question = html.unescape(question.get('question'))
                 print("Question:", decoded_question)
                 q.append(decoded_question)
                 print("Correct Answer:", question.get('correct_answer'))
@@ -66,7 +66,7 @@ def get_trivia_questions():
         print(f"Error: {response.status_code}")
 
     for i in range(5):
-        random_index = random.randint(0, len(inc_ans[i])+1)  # Generate a random index
+        random_index = random.randint(0, len(inc_ans[i])+1)
         inc_ans[i].insert(random_index, cor_ans[i])
 
 
