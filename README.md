@@ -28,7 +28,7 @@ This project offers a dynamic web application featuring a Trivia quiz game with 
 --> static folder : contains images used throughout the website
 
 # API 
---> API Used: [Open Trivia Database](https://opentdb.com/api.php)
+--> API Used: [Open Trivia Database](https://opentdb.com)
 
 # Running the Application
 Run app.py
