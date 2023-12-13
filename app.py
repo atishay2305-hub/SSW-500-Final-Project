@@ -4,6 +4,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required
 import secrets
 from models import Question
+import requests
+import html
+import random
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
@@ -14,6 +17,8 @@ users = db['users']
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
+
+questions_list=[]
 
 class User(UserMixin):
     def __init__(self, username, password):
@@ -31,14 +36,49 @@ def load_user(username):
     return None
 
 def get_trivia_questions():
-    questions = [
-        Question(1, "What is the capital of France?", ["Paris", "Berlin", "London"], "Paris"),
-        Question(2, "Which planet is known as the Red Planet?", ["Mars", "Venus", "Jupiter"], "Mars"),
-        Question(3, "What is the largest mammal in the world?", ["Elephant", "Blue Whale", "Giraffe"], "Blue Whale"),
-        Question(4, "In which year did World War II end?", ["1943", "1945", "1950"], "1945"),
-        Question(5, "What is the chemical symbol for gold?", ["Au", "Ag", "Fe"], "Au"),
+
+    url = "https://opentdb.com/api.php?amount=5"
+
+    response = requests.get(url)
+
+    q=[]
+    inc_ans=[]
+    cor_ans=[]
+
+    if response.status_code == 200:
+        data = response.json()
+        if 'results' in data:
+            questions = data['results']
+            for question in questions:
+                decoded_question = html.unescape(question.get('question'))  # Decode HTML entities
+                print("Question:", decoded_question)
+                q.append(decoded_question)
+                print("Correct Answer:", question.get('correct_answer'))
+                cor_ans.append(question.get('correct_answer'))
+                print("Incorrect Answers:", question.get('incorrect_answers'))
+                inc_ans.append(question.get('incorrect_answers'))
+                print("Category:", question.get('category'))
+                print("Difficulty:", question.get('difficulty'))
+                print("------------------------")
+        else:
+            print("No 'results' found in the response.")    
+    else:
+        print(f"Error: {response.status_code}")
+
+    for i in range(5):
+        random_index = random.randint(0, len(inc_ans[i])+1)  # Generate a random index
+        inc_ans[i].insert(random_index, cor_ans[i])
+
+
+    quiz_questions = [
+        Question(1, q[0], inc_ans[0], cor_ans[0]),
+        Question(2, q[1], inc_ans[1], cor_ans[1]),
+        Question(3, q[2], inc_ans[2], cor_ans[2]),
+        Question(4, q[3], inc_ans[3], cor_ans[3]),
+        Question(5, q[4], inc_ans[4], cor_ans[4]),
     ]
-    return questions
+
+    return quiz_questions
 
 
 @app.route('/')
@@ -101,13 +141,14 @@ def logout():
 @app.route('/quiz')
 @login_required
 def quiz():
+    global questions_list
     questions_list = get_trivia_questions()
     return render_template("quiz.html", questions_list=questions_list)
 
 @app.route('/submitquiz', methods=['POST', 'GET'])
 @login_required
 def submit():
-    questions_list = get_trivia_questions()
+    global questions_list
 
     if questions_list is None or not isinstance(questions_list, list):
         print("Error: Questions list is None or not iterable")

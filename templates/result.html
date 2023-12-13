@@ -29,7 +29,7 @@
   }
 
   .quiz-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha channel for background transparency */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,6 +55,38 @@
     color: #dc3545;
     font-weight: bold;
   }
+
+  /* Button Styles */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .button-container form {
+    margin: 0 10px; /* Adjust the space between buttons */
+  }
+
+  /* Logout button style */
+  .logout-btn {
+    margin-left: 10px;
+  }
+
+  /* Button hover effect */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
 </style>
 
 <div class="background-container"></div>
@@ -67,8 +99,7 @@
   <p>
     Question {{ feedback.index + 1 }}:<br>
     Selected Option: {{ feedback.selected_option }}<br>
-    Correct Option: <span class="{% if feedback.is_correct %}correct-answer{% else %}incorrect-answer{% endif %}">{{
-      feedback.correct_option }}</span><br>
+    Correct Option: <span class="{% if feedback.is_correct %}correct-answer{% else %}incorrect-answer{% endif %}">{{ feedback.correct_option }}</span><br>
     {% if feedback.is_correct %}
     Your answer is correct!
     {% else %}
@@ -76,5 +107,18 @@
     {% endif %}
   </p>
   {% endfor %}
+
+  <!-- Button Container for Alignment -->
+  <div class="button-container">
+    <!-- Take Quiz button -->
+    <form action="{{ url_for('quiz') }}" method="get">
+      <button type="submit">Take Quiz Again</button>
+    </form>
+
+    <!-- Logout button -->
+    <form action="{{ url_for('logout') }}" method="post">
+      <button class="logout-btn" type="submit">Logout</button>
+    </form>
+  </div>
 </div>
 {% endblock %}
